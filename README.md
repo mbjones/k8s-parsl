@@ -10,5 +10,5 @@ Here we use ghcr.io as an example.
 ```
 docker build -t ghcr.io/mbjones.k8sparsl:0.1 .
 echo $GITHUB_PAT | docker login ghcr.io -u mbjones --password-stdin
-docker push ghcr.io/mbjones.k8sparsl:0.1
+docker push ghcr.io/mbjones/k8sparsl:0.1
 ```
