@@ -40,6 +40,10 @@ htex_kube = Config(
                 min_blocks=1,
                 # Maximum number of pods to scale up
                 max_blocks=5,
+                # persistent_volumes (list[(str, str)]) – List of tuples 
+                # describing persistent volumes to be mounted in the pod. 
+                # The tuples consist of (PVC Name, Mount Directory).
+                # persistent_volumes=[('mypvc','/var/data')]
             ),
         ),
     ]
