@@ -21,7 +21,7 @@ htex_kube = Config(
                 namespace="pdgrun",
 
                 # Docker image url to use for pods
-                image='ghcr.io/mbjones/k8sparsl:0.2',
+                image='ghcr.io/mbjones/k8sparsl:0.3',
 
                 # Command to be run upon pod start, such as:
                 # 'module load Anaconda; source activate parsl_env'.
