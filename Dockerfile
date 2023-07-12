@@ -1,5 +1,5 @@
 # Build an image to run parsl. Include any requirements from your application.
-# e.g., docker build -t ghcr.io/mbjones.k8sparsl:0.1 .
+# e.g., docker build -t ghcr.io/mbjones/k8sparsl:0.1 .
 FROM ubuntu:20.04
 
 # Connect this image to a GitHub repository
