@@ -23,8 +23,11 @@ def main():
             print(f'Schedule job at {current_time} for {x} and {y}')
             stat_results.append(calc_product_long(x, y))
     stats = [r.result() for r in stat_results]
-    print(sum(stats))
-    htex_kube.executors[0].shutdown()
+    print("*********************************************************", 
+          sum(stats),
+          "*********************************************************"
+         )
+    #htex_kube.executors[0].shutdown()
 
 @python_app
 def calc_product_long(x, y):

@@ -8,7 +8,7 @@ htex_kube = Config(
         HighThroughputExecutor(
             label='kube-htex',
             cores_per_worker=1,
-            max_workers=2,
+            max_workers=1,
             worker_logdir_root='/',
             # Address for the pod worker to connect back
             address=address_by_route(),
@@ -39,7 +39,7 @@ htex_kube = Config(
                 init_blocks=2,
                 min_blocks=1,
                 # Maximum number of pods to scale up
-                max_blocks=4,
+                max_blocks=5,
             ),
         ),
     ]
