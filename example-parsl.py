@@ -7,12 +7,13 @@ import time
 
 import parsl
 from parsl import python_app
+from parslexec import config_parsl_cluster
 
 def main():
     '''Main program to execute all stats.'''
 
     parsl.set_stream_logger()
-    from parslexec import htex_kube
+    htex_kube = config_parsl_cluster(max_blocks=5, image='ghcr.io/mbjones/k8sparsl:0.3', namespace='pdgrun')
     parsl.load(htex_kube)
 
     size = 5
