@@ -7,7 +7,7 @@ import time
 
 import parsl
 from parsl import python_app
-from parslexec import config_parsl_cluster
+from parslconfig import config_parsl_cluster
 
 def main():
     '''Main program to execute all stats.'''
