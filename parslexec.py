@@ -11,7 +11,7 @@ def config_parsl_cluster(
         cores_per_worker=1, 
         image='ghcr.io/mbjones/k8sparsl:0.3', 
         namespace='pdgrun'):
-    print("Using max_blocks: ", max_blocks)
+
     htex_kube = Config(
         executors=[
             HighThroughputExecutor(
