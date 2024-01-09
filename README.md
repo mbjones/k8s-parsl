@@ -127,6 +127,7 @@ persistentvolume/cephfs-pdgrun-dev created
 
 Finally, create the volume claim to be used in your kubernetes application by binding to the volume you created:
 
+```bash
 ❯ cat pdg-pvc.yaml
 apiVersion: v1
 kind: PersistentVolumeClaim
